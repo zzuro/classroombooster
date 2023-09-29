@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="subjects">
+    <p>Fächer</p>
+  
+  <div class="elements">
+    <div class="item" *ngFor="let sub of subjects">
+      <div class="banner"><img src="{{sub.img}}"></div>
+      <div class="description">
+        <span class="school">{{sub.school}}</span>
+        <div class="sub" *ngFor="let it of sub.subjects">
+          <span>{{it}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+      <span class="anfragen">Anfragen für Nachhilfe in Mathematik oder Informatik aus anderen Studiengängen müssen individuell geprüft werden.</span>
+    </div>
+    <div class="price">
+      <p class="title">Preise</p>
+      <p class="school">Gymnasium: <strong>80Fr./h</strong></p>
+      <p class="school">Studium: <strong>90Fr./h</strong></p>
+    </div>
+  
+    <div class="angebot">
+      <p class="school" style="padding-top: 30px; font-size: 40px; color: white">Angebot</p>
+      <p class="angebot-text">Beschreibung was unser Angebot genau beinhaltet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+    </div>
+  
+  </div>

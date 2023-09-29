@@ -1,0 +1,119 @@
+.wrapper{
+    min-width: 1200px;
+  }
+  
+  .subjects{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #62c080;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .price{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    color: black;
+    text-align: center;
+  }
+  
+  .subjects p{
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    font-size: 60px;
+    color: white;
+  }
+  
+  .elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    position: static;
+  }
+  
+  .item{
+    width: 390px;
+    height: 630px;
+    background-color: white;
+  }
+  
+  .description{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    color: black;
+    text-align: center;
+  }
+  
+  .school{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    color: black;
+    text-align: center;
+  }
+  
+  .banner{
+    background-color: aqua;
+    height: 40%;
+  }
+  
+  .banner img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sub{
+    margin: 10px 0 0 0;
+  }
+  
+  .anfragen{
+    margin: 0;
+    padding-top: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .angebot{
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    color: white;
+    background-color: #62c080;
+    margin: 50px;
+  }
+  
+  .angebot-text{
+    padding: 30px 50px 50px 50px;
+  
+  }

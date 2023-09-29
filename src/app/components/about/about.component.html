@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <p class="title">Team</p>
+    <div class="elements">
+      <div class="item" *ngFor="let per of person">
+        <div class="portrait"><img src="{{per.img}}"></div>
+        <div class="description">
+          <p class="name">{{per.name}}</p>
+          <p class="profession">{{per.profession}}</p>
+          <button mat-button class="more" (click)="openDialog(per.name, per.desc, per.profession)">Mehr</button>
+        </div>
+      </div>
+    </div>
+  </div>
