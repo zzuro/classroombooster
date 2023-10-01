@@ -1,92 +1,169 @@
-.wrapper{
-  min-width: 1200px;
-  width: 100%;
-}
+ 
+  .wrapper{
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  .welcome{
+    height: 850px;
+    background-image: url("/assets/banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+  
+  .welcome p{
+    margin: 0;
+    font-size: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 10;
+    letter-spacing: 5px; /* Increase letter spacing */
+    color: white;
+    filter: drop-shadow(1px 0px 3px rgb(0, 0, 0));
+  }
+  
+  
+  .dienstleitung-wrapper{
+    position: static;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #62c080;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  
+  .bild{
+    width: 50%;
+    background-image: url("/assets/class.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  .bild img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .description{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 10;
+    color: white;
+  }
+  
+  .title{
+    font-size: 44px;
+    margin: 10px 0 0 0;
+  }
+  
+  .desc{
+    font-family: Gadugi, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  
+  .description button{
+    background-color: white;
+    color: #62c080;
+    margin-top: 20px;
+    font-size: 18px;
+    transition-duration: 0.3s;
+  }
+  
+  .description button:hover{
+    background-color: #62c080;
+    color: white;
+  }
 
-.welcome{
-  min-width: 100%;
-  height: 850px;
-  background-image: url("/assets/banner.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.welcome p{
-  margin: 0;
-  font-size: 100px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 10;
-  letter-spacing: 5px; /* Increase letter spacing */
-  color: white;
-  filter: drop-shadow(1px 0px 3px rgb(0, 0, 0));
-}
+  @media only screen and (max-width: 1200px){
+   
+    .welcome{
+      align-items: center;
+      justify-content: flex-start;
+      height: 80vw;
+    }
+    
+    .welcome-top{
+      padding-top: 25%;
+    }
+
+    .welcome p{
+      font-size: 8vw;
+      min-width: 0%;
+    }
+    
+  }
 
 
-.dienstleitung-wrapper{
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-color: #62c080;
-  min-width: 800px;
-  max-width: 1300px;
-  min-height: 800px;
-  max-height: 800px;
-  display: flex;
-  flex-direction: row;
-}
-
-.bild{
-  width: 50%;
-  background-image: url("/assets/class.jpg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-.bild img{
-  width: 100%;
-  height: 100%;
-}
-
-.description{
-  width: 50%;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Roboto, sans-serif;
-  font-weight: 10;
-  color: white;
-}
-
-.title{
-  font-size: 44px;
-  margin: 10px 0 0 0;
-}
-
-.desc{
-  font-family: Gadugi, sans-serif;
-  font-size: 24px;
-  text-align: center;
-  padding-top: 50px;
-}
+  @media only screen and (max-width: 1100px){
 
 
-.description button{
-  background-color: white;
-  color: #62c080;
-  margin-top: 20px;
-  font-size: 18px;
-  transition-duration: 0.3s;
-}
+    .dienstleitung-wrapper{
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+      width: 100%;
+    }
 
-.description button:hover{
-  background-color: #62c080;
-  color: white;
-}
+    .bild{
+      width: 0%;
+      display: none;
+    }
+
+    .description{
+      padding: 30wv;
+      width: 100%;
+    }
+
+    .title{
+      font-size: 5vw;
+    }
+    .desc{
+      font-size: 3vw;
+      padding-top: 5vw;
+    }
+
+    .description button{
+      font-size: 3vw;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 500px){
+
+    .welcome p{
+      font-size: 5vw;
+      min-width: 0%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

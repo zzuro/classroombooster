@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,10 +6,15 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit{
 
   constructor(private title:Title){
     this.title.setTitle('Kontakt');
+  }
+  ngOnInit(): void {
+    setTimeout(() => {
+      document.querySelector(".loader")?.classList.add("loader--hidden");
+    }, 200)
   }
 
 }

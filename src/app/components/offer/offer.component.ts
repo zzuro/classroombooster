@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Subject } from '/app/src/app/models';
 import { Title } from '@angular/platform-browser';
 
+
+declare function preloader():void; 
+
 @Component({
   selector: 'app-offer',
   templateUrl: './offer.component.html',
@@ -13,10 +16,16 @@ import { Title } from '@angular/platform-browser';
 export class OfferComponent implements OnInit {
 
   public subjects!: Array<Subject>;
-
-  constructor(private title: Title) { }
+  
+  constructor(private title: Title) { 
+  }
 
   ngOnInit() {
+    
+    setTimeout(() => {
+      document.querySelector(".loader")?.classList.add("loader--hidden");
+    }, 200)
+
     this.title.setTitle('Angebot');
 
     this.subjects = [

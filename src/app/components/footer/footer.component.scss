@@ -1,18 +1,20 @@
 .footer{
-    height: 150px;
+    height: 30vw;
+    max-height: 150px;
     width: 100%;
-    min-width: 1200px;
+    min-width: 300px;
     background-color: #f3f4f4;
     font-family: Gadugi, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 5wv;
   }
   
   .footer a{
     padding-bottom: 15px;
     padding-top: 15px;
   }
+
   

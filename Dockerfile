@@ -1,11 +1,14 @@
-FROM node:latest as node
+FROM node:latest AS node
 LABEL AUTHOR="Alessandro Vezzù"
-WORKDIR /app
+
 RUN npm install -g @angular/cli
 
-COPY package*.json ./
+WORKDIR /app
+
+COPY . .
+
 RUN npm install
 
-EXPOSE 4200
+EXPOSE 4200:4200
 
-CMD ["npm", "start" ]
+CMD [ "ng", "serve", "--host", "0.0.0.0"]

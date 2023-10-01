@@ -15,6 +15,11 @@ export class AboutComponent implements OnInit {
   constructor(private title: Title, private matDialog: MatDialog) { }
 
   ngOnInit() {
+
+    setTimeout(() => {
+      document.querySelector(".loader")?.classList.add("loader--hidden");
+    }, 200)
+    
     this.title.setTitle('Über uns');
 
     this.person = [

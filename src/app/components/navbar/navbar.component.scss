@@ -1,8 +1,8 @@
 
 .toolbar{
-    z-index: 2;
+    min-width: 300px;
+    z-index: 3;
     width: 100%;
-    min-width: 1200px;
     background-color: white;
     position: relative;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow with 2px vertical offset and 4px blur */
@@ -45,5 +45,50 @@
     color: #62c080;
   }
   
+
+  @media only screen and (max-width: 900px){
+    .logo span{
+      display: none;
+    }
+
+    .toolbar{
+      justify-content: center;
+    }
+
+    .nav-item{
+      margin: 1%;
+    }
+  }
+
+  @media only screen and (max-width: 520px){
+    
+    .logo span{
+      display: contents;
+      font-size: 28px;
+    }
+
+    .logo-img{
+      width: 70px;
+    }
+
+
+
+    .toolbar{
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+      }
+      .nav{
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-item{
+        margin-top: 10px;
+      }
+
+  }
   
   
