@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  classroombooster:
+    build: .
+    ports:
+      - "4200:4200"
+    container_name: classroombooster
+    volumes:
+      - '/classroombooster/node_modules'
+      - ./:/classroombooster 

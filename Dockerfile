@@ -3,12 +3,9 @@ LABEL AUTHOR="Alessandro Vezzù"
 
 RUN npm install -g @angular/cli
 
-WORKDIR /app
+WORKDIR /classroombooster
 
-COPY . .
-
+COPY package*.json ./
 RUN npm install
 
-EXPOSE 4200:4200
-
-CMD [ "ng", "serve", "--host", "0.0.0.0"]
+CMD [ "ng", "serve", "--host", "0.0.0.0", "--poll", "2000"]

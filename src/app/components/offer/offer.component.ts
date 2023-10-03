@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject } from '/app/src/app/models';
+import { Subject } from '/classroombooster/src/app/models';
 import { Title } from '@angular/platform-browser';
 
 
