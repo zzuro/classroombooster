@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatListModule} from "@angular/material/list";
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import {MatListModule} from "@angular/material/list";
     MatDialogModule,
     MatListModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

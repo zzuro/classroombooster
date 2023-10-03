@@ -1,6 +1,6 @@
 .wrapper{
 
-    margin-top: 20vw;
+    margin-top: 10vw;
     min-width: 300px;
     height: 100%;
     width: 100%;
@@ -38,17 +38,17 @@
 
   @media only screen and (max-width: 1100px){
     .title{
-      font-size: 10vw;
+      font-size: 8vw;
     }
 
     .desc{
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 5vw;
+      font-size: 3vw;
     }
 
     .contact{
-      font-size: 5vw;
+      font-size: 3vw;
     }
 
   }
