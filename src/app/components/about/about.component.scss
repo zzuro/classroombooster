@@ -1,6 +1,7 @@
 .wrapper{
-    min-width: 1200px;
-    height: 900px;
+    min-width: 300px;
+    height: 100%;
+    width: 100%;
   }
   
   .title{
@@ -52,7 +53,7 @@
     font-size: 24px;
     max-width: 800px;
     padding: 0;
-    margin: 0;
+    margin: 20px;
     text-align: justify;
   }
 
@@ -95,4 +96,20 @@
   .more:hover{
     background-color: white;
     color: #62c080;
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .wrapper{
+      height: auto;
+    }
+
+    .title{
+      font-size: 10vw;
+    }
+
+    .description p{
+      font-size: 5vw;
+    }
+    
   }

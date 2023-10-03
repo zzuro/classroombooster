@@ -1,9 +1,11 @@
 .wrapper{
-    min-width: 1200px;
-    height: 1000px;
+
+    margin-top: 20vw;
+    min-width: 300px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   
@@ -12,6 +14,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 10;
     letter-spacing: 5px; /* Increase letter spacing */
+    text-align: center;
   }
   
   .desc{
@@ -21,9 +24,9 @@
   }
   
   .contact{
+    margin-top: 110px;
     background-color: #62c080;
     color: white;
-    margin-top: 100px;
     font-size: 18px;
     transition-duration: 0.3s;
   }
@@ -31,4 +34,32 @@
   .contact:hover{
     background-color: white;
     color: #62c080;
+  }
+
+  @media only screen and (max-width: 1100px){
+    .title{
+      font-size: 10vw;
+    }
+
+    .desc{
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 5vw;
+    }
+
+    .contact{
+      font-size: 5vw;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 500px){
+    .wrapper{
+      height: auto;
+    }
+
+    .contact{
+      margin-bottom: 50vw;
+    }
   }
